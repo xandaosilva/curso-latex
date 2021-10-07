@@ -22,6 +22,9 @@
 	\listoffigures % lista de figuras
 	\newpage
 	
+	\listoftables % lista de tabelas
+	\newpage
+	
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
 	\section{Seção AAA}
@@ -31,6 +34,17 @@
 	
 	Praesent eget condimentum lorem, sit amet dictum justo. Duis in ante et dolor luctus mattis. Sed dapibus, purus vitae ultricies luctus, dui nibh tincidunt augue, at sagittis augue mauris ut lorem. Nunc egestas bibendum laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae pharetra dolor. Duis tincidunt fermentum mollis. Mauris dapibus ornare sollicitudin. Etiam convallis, enim quis scelerisque convallis, eros velit fermentum justo, non ultricies magna nunc ut urna. Nulla facilisi. Duis eget varius mauris. Sed aliquam, lectus eu lobortis semper, massa eros feugiat sem, eu viverra erat turpis non felis. Donec ultrices lorem non convallis malesuada.
 	
+	\begin{table}[H]
+		\centering
+		\caption[Legenda curta]{Esta é uma legenda longa}
+		\label{tab:tab1}
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{A1} & \textbf{B1} & \textbf{C1} \\ \hline
+			\textbf{A2} &    &    \\ \hline
+			\textbf{A3} &    &    \\ \hline
+		\end{tabular}
+	\end{table}
 	
 	Proin blandit facilisis dui. Curabitur molestie aliquet urna et auctor. Quisque finibus nunc id elementum condimentum. Curabitur non ultricies ante, at cursus felis. Nullam sit amet odio venenatis, ultricies urna dapibus, fermentum ante. Etiam et lorem ornare, dictum mi sed, fringilla nisl. Duis sagittis efficitur felis interdum porta. Mauris efficitur imperdiet quam eget venenatis. Donec euismod fringilla nibh a tristique.
 	
