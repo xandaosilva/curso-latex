@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{amsmath} % Modo matemático
+
+\begin{document}	
+	\title{\textbf{{\Huge Modo matemático - erros comuns}}}
+	\author{Alexandre Rogério}
+	%\date{}
+	\maketitle
+	\thispagestyle{empty} % Oculta a numeração da página
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{Roman}
+	\tableofcontents
+	\newpage
+	
+	\listoffigures
+	\newpage
+	
+	\listoftables
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	
+	\section{Modo matemático}
+	Esta é a equação de segundo grau: $ ax^2 + bx + c = 0 $ . A solução é:
+	\begin{equation*}
+		x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	\end{equation*}
+\end{document}
