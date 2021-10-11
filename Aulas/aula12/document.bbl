@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[02, 2020]{autor02}
+02, A. (2020).
+\newblock {\em Livro 01}.
+\newblock P 01.
+
+\bibitem[03, 2002]{autor03}
+03, A. (2002).
+\newblock {\em Livro 02}.
+\newblock p 02.
+
+\bibitem[Fitzgerald, 2014]{Fitzgerald2014}
+Fitzgerald (2014).
+\newblock {\em Máquinas Elétricas de Fitzgerald e Kingsley}.
+\newblock Mc Graw Hill.
+
+\end{thebibliography}
