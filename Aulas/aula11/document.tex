@@ -10,6 +10,9 @@
 \usepackage{tabularx}
 \usepackage{amsmath} % Modo matemático
 
+\renewcommand{\sin}{\mathrm{sen\hspace{0.5mm}}}
+\renewcommand{\tan}{\mathrm{tg\hspace{0.5mm}}}
+
 \begin{document}	
 	\title{\textbf{{\Huge Modo matemático - erros comuns}}}
 	\author{Alexandre Rogério}
@@ -35,21 +38,34 @@
 	\section{Modo matemático}
 	Esta é a equação de segundo grau: $ ax^2 + bx + c = 0 $ . A solução é:
 	\begin{equation*}
-		x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+		\Delta = b^2 - 4ac
+	\end{equation*}
+	\begin{equation*}
+		x = \frac{-b \pm \sqrt{\Delta}}{2a}
 	\end{equation*}
 
 	\begin{equation*}
 		\begin{array}{cc}
-			x_1 = \dfrac{-b + \sqrt{b^2 - 4ac}}{2a}	&
-			x_2 = \dfrac{-b - \sqrt{b^2 - 4ac}}{2a}
+			x_1 = \dfrac{-b + \sqrt{\Delta}}{2a}	&
+			x_2 = \dfrac{-b - \sqrt{\Delta}}{2a}
 		\end{array}
 	\end{equation*}
 
+	\section{Matriz}
 	\begin{equation*}
 		A = \begin{bmatrix}
 			1 & 0 & 0 \\
 			0 & 1 & 0 \\
 			0 & 0 & 1
 		\end{bmatrix}
+	\end{equation*}
+
+	\section{Comandos}
+	\begin{equation*}
+		\sin{2x}
+	\end{equation*}
+
+	\begin{equation*}
+		\tan{2x}
 	\end{equation*}
 \end{document}
