@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\begin{document}	
+	\title{\textbf{{\Huge Citações internas}}}
+	\author{Alexandre Rogério}
+	\date{}
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{Roman}
+	\tableofcontents
+	\newpage
+	
+	\listoffigures
+	\newpage
+	
+	\listoftables
+	\newpage
+
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	
+	\section{Seção AAA}
+	\label{sec:secAAA}
+	A tabela \ref{tab:tab_sem_borda} não possui bordas externas. Esta é a seção \ref{sec:secAAA}.
+
+	\begin{table}[H]
+		\centering
+		\caption[Legenda Curta]{Esta Legenda é longa}
+		\label{tab:tab_sem_borda}
+		\begin{tabular}{l|l|l}
+			{\LARGE \textbf{A1}} & \textbf{B1} & \textbf{C1} \\ \hline
+			\textbf{A2}          &             &             \\ \hline
+			A3          &             &             \\
+		\end{tabular}
+	\end{table}
+
+	\renewcommand{\arraystretch}{1.5}
+	\begin{table}[H]
+		\centering
+		\caption[Legenda Curta]{Esta Legenda é longa}
+		\label{tab:tab_com_borda}
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{A1} & \multicolumn{2}{l|}{\textbf{B1}} \\ \hline
+			A2          &                 &                \\ \hline
+			A3          &                 &                \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{Figuras/fig1}
+		\caption[Legenda curta]{Esta é uma legenda longa}
+		\label{fig:fig1}
+	\end{figure}
+	
+	\section{Seção BBB}	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{Figuras/fig3}
+		\caption[Legenda curta]{Esta é uma legenda longa}
+		\label{fig:fig3}
+	\end{figure}
+	
+	Referência a equação (\ref{eq:emc}).
+	
+	\begin{equation}
+	\label{eq:emc}
+		e=mc^2
+	\end{equation}
+\end{document}
