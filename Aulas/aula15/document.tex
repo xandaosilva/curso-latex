@@ -1,0 +1,59 @@
+\documentclass[14pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetheme{CambridgeUS}
+\begin{document}
+	\author{Alexandre Rogério}
+	\title{Exibindo o conteúdo pausadamente}
+	%\subtitle{}
+	%\logo{}
+	%\institute{}
+	%\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+	\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplo 1}
+\transboxin
+\begin{block}{Bloco}
+	Quero esse conteúdo aparecendo antes. \pause
+	Quero esse conteúdo aparecendo depois.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplo 2}
+\begin{block}{Exemplo de bloco}
+	\begin{enumerate}[<+->]
+		\item primeiro item.
+		\item segundo item.
+		\item terceiro item.
+	\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplo 3}
+\begin{block}{Exemplo de bloco}
+	\begin{itemize}
+		\only<1-3>{\item Equação de primeiro grau:}
+		\only<3>{\begin{equation}
+			ax + b = 0
+		\end{equation}}
+		\uncover<2->{\item Equação de segundo grau:}
+		\only<4->{\begin{equation}
+		ax^2 + bx + c = 0
+		\end{equation}}
+	\end{itemize}
+\end{block}
+\end{frame}
+\end{document}
