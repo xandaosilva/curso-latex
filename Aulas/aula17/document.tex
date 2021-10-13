@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\begin{document}
+	\title{\textbf{{\Huge Dividir o documento}}}
+	\author{Alexandre Rogério}
+	%\date{Outubro de 2021}
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{Roman}
+	\tableofcontents
+	\newpage
+	
+	\listoffigures
+	\newpage
+	
+	\listoftables
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	
+	\section{Introdução}
+		\input{intro.tex}
+	\section{Desenvolvimento}
+		\input{dev.tex}
+	\section{Conclusão}
+		\input{conclusao.tex}
+\end{document}
