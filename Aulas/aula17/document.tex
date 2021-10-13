@@ -7,7 +7,9 @@
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{tabularx}
+%\usepackage[perpage]{footmisc} recomeça a contagem de rodapé a cada página
 
+% \renewcommand{\thefootnote}{\Roman{footnote}} muda o contador para algarismo romano
 \begin{document}
 	\title{\textbf{{\Huge Dividir o documento}}}
 	\author{Alexandre Rogério}
@@ -32,8 +34,13 @@
 	
 	\section{Introdução}
 		\input{intro.tex}
+		\footnote{Primeiro rodapé}
+		\footnote{Segundo rodapé}
+		\footnote{Terceiro rodapé}
+		\footnote{Quarto rodapé}
 	\section{Desenvolvimento}
 		\input{dev.tex}
+		\footnote{Quinto rodapé}
 	\section{Conclusão}
 		\input{conclusao.tex}
 \end{document}
