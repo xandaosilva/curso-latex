@@ -7,6 +7,7 @@
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{csquotes} % aspas
 %\usepackage[perpage]{footmisc} recomeça a contagem de rodapé a cada página
 
 % \renewcommand{\thefootnote}{\Roman{footnote}} muda o contador para algarismo romano
@@ -34,13 +35,13 @@
 	
 	\section{Introdução}
 		\input{intro.tex}
-		\footnote{Primeiro rodapé}
-		\footnote{Segundo rodapé}
-		\footnote{Terceiro rodapé}
-		\footnote{Quarto rodapé}
+		\footnote{\enquote{Primeiro rodapé.}}
+		\footnote{\enquote{Segundo rodapé.}}
+		\footnote{\enquote{Terceiro rodapé.}}
+		\footnote{\enquote{Quarto rodapé.}}
 	\section{Desenvolvimento}
 		\input{dev.tex}
-		\footnote{Quinto rodapé}
+		\footnote{\enquote{Quinto rodapé.}}
 	\section{Conclusão}
 		\input{conclusao.tex}
 \end{document}
